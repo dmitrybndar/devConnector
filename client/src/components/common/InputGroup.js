@@ -9,7 +9,7 @@ const InputGroup = ({
   error,
   onChange,
   icon,
-  type = 'text',
+  type,
 }) => {
   return (
     <div className="input-group mb-3">
@@ -21,7 +21,7 @@ const InputGroup = ({
       <input
         className={classnames('form-control form-control-lg', {
           'is-invalid': error,
-          'is-valid': !error,
+          //'is-valid': !error,
         })}
         placeholder={placeholder}
         name={name}
@@ -41,6 +41,10 @@ InputGroup.propTypes = {
   error: PropTypes.string,
   type: PropTypes.string.isRequired,
   onChange: PropTypes.func.isRequired,
+};
+
+InputGroup.defaultProps = {
+  type: 'text',
 };
 
 export default InputGroup;

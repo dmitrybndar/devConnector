@@ -15,7 +15,7 @@ const TextAreaFieldGroup = ({
       <textarea
         className={classnames('form-control form-control-lg', {
           'is-invalid': error,
-          'is-valid': !error,
+          //'is-valid': !error,
         })}
         placeholder={placeholder}
         name={name}

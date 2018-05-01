@@ -21,7 +21,7 @@ const SelectListGroup = ({
       <select
         className={classnames('form-control form-control-lg', {
           'is-invalid': error,
-          'is-valid': !error,
+          //'is-valid': !error,
         })}
         name={name}
         value={value}
