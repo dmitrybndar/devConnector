@@ -31,7 +31,7 @@ if (localStorage.jwtToken) {
     // TODO: Clear current Profile
 
     // Redirect to login
-    window.location.href = '/login'; 
+    window.location.href = '/login';
   }
 }
 
@@ -44,7 +44,7 @@ class App extends Component {
             <Navbar />
 
             <Route exact path="/" component={Landing} />
-            <div className="container">
+            <div className="container content-wrapper">
               <Route exact path="/login" component={Login} />
               <Route exact path="/register" component={Register} />
             </div>
